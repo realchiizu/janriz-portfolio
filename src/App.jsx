@@ -13,7 +13,7 @@ import {
   ChevronLeft, 
   ChevronRight, 
   Code2, 
-  Database, 
+  Zap, 
   Layout, 
   Smartphone,
   Server,
@@ -33,7 +33,7 @@ import {
   LineChart,
   FileCode2,
   Hexagon,
-  Flame,
+  Database,
   Figma,
   MonitorSmartphone,
   GraduationCap,
@@ -44,7 +44,8 @@ import {
   Projector,
   Cloud,
   LayoutDashboard, 
-  Network,        
+  Network,
+  ExternalLink,        
   Wind       
 } from 'lucide-react';
 
@@ -159,7 +160,7 @@ const SkillCard = ({ icon: Icon, title }) => (
   </div>
 );
 
-const ProjectCard = ({ title, type, year, tools, images, description }) => {
+const ProjectCard = ({ title, type, year, tools, images, description, link }) => {
   const [currentImage, setCurrentImage] = useState(0);
 
   const nextImage = (e) => {
@@ -207,6 +208,7 @@ const ProjectCard = ({ title, type, year, tools, images, description }) => {
         </div>
       </div>
       
+      
       <div className="p-6 flex flex-col flex-grow">
         <div className="flex justify-between items-start mb-1">
            <h3 className="font-bold text-lg text-neutral-900 leading-tight">{title}</h3>
@@ -217,6 +219,19 @@ const ProjectCard = ({ title, type, year, tools, images, description }) => {
         <p className="text-gray-500 text-sm mb-6 flex-grow leading-relaxed">
           {description}
         </p>
+
+        {link && (
+          <div className="mb-6">
+            <a 
+              href={link} 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="inline-flex items-center gap-1.5 text-xs font-bold text-white bg-neutral-800 hover:bg-pink-500 px-4 py-2 rounded-lg transition-all shadow-md hover:shadow-lg hover:-translate-y-0.5 cursor-pointer w-fit"
+            >
+              <ExternalLink size={14} /> View Live Project
+            </a>
+          </div>
+        )}
         
         <div className="flex flex-wrap gap-2 pt-5 border-t border-gray-100 mt-auto">
            {tools.map((Tool, idx) => (
@@ -487,7 +502,7 @@ export default function App() {
               <SkillCard icon={Smartphone} title="Kotlin" />
               <SkillCard icon={MonitorSmartphone} title="Android Studio" />
               <SkillCard icon={LayoutDashboard} title="WordPress" />
-              <SkillCard icon={Flame} title="Firebase" />
+              <SkillCard icon={Zap} title="Supabase" />
               <SkillCard icon={Cloud} title="Web Hosting" />
 
               {/* Row 4: Design & Developer Tools */}
@@ -634,6 +649,25 @@ export default function App() {
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
               
               <ProjectCard 
+                title="Roamly" 
+                year="2026"
+                type="Full-Stack Web Application" 
+                description="An AI-driven travel app integrating Gemini 1.5 Flash for itineraries and Aviationstack for live flight tracking. Built on a secure Supabase backend with Row-Level Security and a social trip-cloning system."
+                link="https://roamly-world.vercel.app/"
+                tools={[
+                  { icon: Globe, name: 'React' },
+                  { icon: Network, name: 'REST APIs' },
+                  { icon: Zap, name: 'Supabase' }
+                ]}
+                images={[
+                  "/roamly-1.png", 
+                  "/roamly-2.png",
+                  "/roamly-3.png"
+                ]}
+              />
+              
+
+              <ProjectCard 
                 title="Personal Portfolio" 
                 year="2026"
                 type="Front-End Architecture" 
@@ -655,10 +689,10 @@ export default function App() {
                 title="FitBeat" 
                 year="2025"
                 type="Full-Stack Application" 
-                description="A clinic management app developed as my Capstone project. I served as the Project Manager and QA lead, handling team workflows, software testing, Firebase connection, and cloud hosting."
+                description="A clinic management web and mobile app developed as our Capstone project. I served as the Project Manager and QA lead, handling team workflows, software testing, and designing the initial layout."
                 tools={[
                   { icon: Kanban, name: 'Project Management' },
-                  { icon: Flame, name: 'Firebase' },
+                  { icon: Figma, name: 'Figma' },
                   { icon: Cloud, name: 'Web Hosting' }
                 ]}
                 images={[
