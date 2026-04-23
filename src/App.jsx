@@ -15,7 +15,6 @@ import {
   Code2, 
   Zap, 
   Layout, 
-  Smartphone,
   Server,
   Terminal,
   Cpu,
@@ -46,6 +45,7 @@ import {
   LayoutDashboard, 
   Network,
   ExternalLink,        
+  Flame,
   Wind       
 } from 'lucide-react';
 
@@ -499,7 +499,7 @@ export default function App() {
               <SkillCard icon={Database} title="SQL" />
 
               {/* Row 3: Mobile, CMS & Cloud */}
-              <SkillCard icon={Smartphone} title="Kotlin" />
+              <SkillCard icon={Flame} title="Firebase" />
               <SkillCard icon={MonitorSmartphone} title="Android Studio" />
               <SkillCard icon={LayoutDashboard} title="WordPress" />
               <SkillCard icon={Zap} title="Supabase" />
@@ -720,18 +720,20 @@ export default function App() {
               />
 
               <ProjectCard 
-                title="Digital Sticker Notebook" 
+                title="go-to" 
                 year="2024"
-                type="Interactive Web App" 
-                description="A playful, mobile-responsive web app that simulates a digital sticker collection. I used vanilla JavaScript to implement custom 2D bounce physics and drag-and-drop mechanics."
+                type="Full-Stack Web Application" 
+                description="A minimalist, editorial-inspired food spot directory and community archive. Features deep-linking for sharing specific spots, an interactive upvote system, and anonymous feedback integration via Web3Forms."
+                link="https://ourgotos.blog/"
                 tools={[
-                  { icon: Terminal, name: 'Vanilla JS' },
-                  { icon: Layout, name: 'CSS3' },
-                  { icon: Code2, name: 'HTML5' }
+                  { icon: Globe, name: 'React' },
+                  { icon: Flame, name: 'Firebase' },
+                  { icon: Palette, name: 'Tailwind CSS' }
                 ]}
                 images={[
-                  "/s1.png",
-                  "/s2.png"
+                  "/goto1.png", 
+                  "/goto2.png",
+                  "/goto3.png"
                 ]}
               />
 
