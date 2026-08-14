@@ -332,6 +332,7 @@ export default function App() {
 
 
   const certifications = [
+    { title: "Cisco Certified Support Technician Cybersecurity", issuer: "Cisco", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Cisco_logo_blue_2016.svg/1280px-Cisco_logo_blue_2016.svg.png",link:"https://www.credly.com/badges/7f140f57-535a-4940-8fb4-f833571522fa/public_url" },
     { title: "CCNA: Introduction to Networks", issuer: "Cisco", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Cisco_logo_blue_2016.svg/1280px-Cisco_logo_blue_2016.svg.png",link:"https://www.credly.com/earner/earned/badge/afa7f275-7197-4881-9cf5-6c892f325a84" },
     { title: "PMI Project Management Ready™", issuer: "Project Management Institute", logo: "https://wp.logos-download.com/wp-content/uploads/2021/01/Project_Management_Institute_Logo.png?dl",link:"https://www.credly.com/earner/earned/badge/12464901-95fd-4144-983c-90dc33e5dcea" },
     { title: "IT Specialist - Networking", issuer: "Certiport", logo: "https://all-digital.org/wp-content/uploads/2022/11/Certiport-Pearson-Logo-2016.png" ,link:"https://www.credly.com/earner/earned/badge/8624b2d5-339b-4149-839f-1b223bcdb1d7"},
@@ -585,6 +586,29 @@ export default function App() {
             
             <div className="relative border-l-2 border-pink-200 ml-4 md:ml-8 space-y-12">
               
+              <div className="relative pl-8 md:pl-12 group">
+                
+                <div className="absolute -left-[11px] top-1 w-5 h-5 bg-pink-400 rounded-full border-4 border-neutral-50 group-hover:bg-pink-500 transition-colors shadow-sm"></div>
+                
+                
+                <div className="bg-white p-6 rounded-2xl shadow-sm border border-neutral-100 hover:shadow-md transition-shadow">
+                  <div className="flex flex-col md:flex-row md:items-center justify-between mb-2">
+                    <h3 className="text-xl font-bold text-neutral-800 flex items-center gap-2">
+                      <Briefcase size={18} className="text-pink-400" /> ServiceNow Developer Intern
+                    </h3>
+                    <span className="text-xs font-mono font-semibold text-pink-500 bg-pink-50 px-3 py-1 rounded-full w-fit mt-2 md:mt-0">
+                      May 2026 - Present
+                    </span>
+                  </div>
+                  
+                  <h4 className="text-neutral-500 font-medium mb-4 text-sm">DFI Retail Group - Mandaluyong, PH</h4>
+                  
+                  <p className="text-neutral-600 text-sm leading-relaxed">
+                    Configuring and automating ServiceNow forms and workflows to streamline internal operations across multi-banner retail brands. Migrated hundreds of knowledge base articles to centralize documentation, leveraged Power Automate for cross-platform processes, and facilitated service desk support for regional store staff in Hong Kong.
+                  </p>
+                </div>
+              </div>
+
               
               <div className="relative pl-8 md:pl-12 group">
                 
@@ -594,18 +618,18 @@ export default function App() {
                 <div className="bg-white p-6 rounded-2xl shadow-sm border border-neutral-100 hover:shadow-md transition-shadow">
                   <div className="flex flex-col md:flex-row md:items-center justify-between mb-2">
                     <h3 className="text-xl font-bold text-neutral-800 flex items-center gap-2">
-                      <Briefcase size={18} className="text-pink-400" /> WordPress Developer Intern
-                    </h3>
-                    <span className="text-xs font-mono font-semibold text-pink-500 bg-pink-50 px-3 py-1 rounded-full w-fit mt-2 md:mt-0">
-                      February 2026 - Present
-                    </span>
-                  </div>
-                  
-                  <h4 className="text-neutral-500 font-medium mb-4 text-sm">Spiralytics, Inc. - Metro Manila, PH</h4>
-                  
-                  <p className="text-neutral-600 text-sm leading-relaxed">
-                    Developing WordPress websites from scratch based on Figma designs and maintaining existing sites and blogs. Gained experience working with senior developers in an agile workflow using Jira, while also expanding skills in Google Analytics for site performance and insights.
-                  </p>
+                        <Briefcase size={18} className="text-neutral-400 group-hover:text-pink-400 transition-colors" /> WordPress Developer Intern
+                      </h3>
+                      <span className="text-xs font-mono text-neutral-500 mt-2 md:mt-0">
+                        January 2026 - April 2026
+                      </span>
+                    </div>
+                    
+                    <h4 className="text-neutral-500 font-medium mb-4 text-sm">Spiralytics, Inc. - Makati, PH</h4>
+                    
+                    <p className="text-neutral-600 text-sm leading-relaxed">
+                      Developing WordPress websites from scratch based on Figma designs and maintaining existing sites and blogs. Gained experience working with senior developers in an agile workflow using Jira, while also expanding skills in Google Analytics for site performance and insights.
+                    </p>
                 </div>
               </div>
 
@@ -622,7 +646,7 @@ export default function App() {
                       2022 - Present
                     </span>
                   </div>
-                  <h4 className="text-neutral-500 font-medium mb-4 text-sm">FEU Institute of Technology</h4>
+                  <h4 className="text-neutral-500 font-medium mb-4 text-sm">FEU Institute of Technology - Manila, PH</h4>
                   <p className="text-neutral-600 text-sm leading-relaxed">
                     Currently pursuing a BS in Information Technology specializing in Web and Mobile Applications. Experienced in full-stack development, including front-end design, back-end logic, and database integration. Hands-on experience with web hosting, Linux system administration, and Python-based data analysis.
                   </p>
