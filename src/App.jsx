@@ -456,7 +456,7 @@ export default function App() {
               FRONT-END DEVELOPER & UI/UX ENTHUSIAST
             </p>
             <a 
-              href="/CUEVAS_MASTERCV.pdf" 
+              href="/CUEVAS_CV.pdf" 
               target="_blank"
               rel="noopener noreferrer"
               className="bg-pink-400 text-white px-8 py-3 rounded-full font-semibold hover:bg-pink-500 hover:scale-105 transition-all shadow-[0_0_20px_rgba(244,114,182,0.5)] flex items-center gap-2 mx-auto w-fit"
