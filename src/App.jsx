@@ -453,7 +453,7 @@ export default function App() {
               janriz <span className="text-pink-400">brielle</span>
             </h1>
             <p className="text-lg md:text-xl text-gray-300 mb-8 max-w-2xl mx-auto font-light">
-              FRONT-END DEVELOPER & UI/UX ENTHUSIAST
+              JUNIOR SOFTWARE ENGINEER
             </p>
             <a 
               href="/CUEVAS_CV.pdf" 
@@ -604,7 +604,7 @@ export default function App() {
                   <h4 className="text-neutral-500 font-medium mb-4 text-sm">DFI Retail Group - Mandaluyong, PH</h4>
                   
                   <p className="text-neutral-600 text-sm leading-relaxed">
-                    Configuring and automating ServiceNow forms and workflows to streamline internal operations across multi-banner retail brands. Migrated hundreds of knowledge base articles to centralize documentation, leveraged Power Automate for cross-platform processes, and facilitated service desk support for regional store staff in Hong Kong.
+                    Configuring and automating ServiceNow forms and workflows to streamline internal operations across multi-banner retail brands. Migrated extensive knowledge base documentation to centralize operational guides, leveraged Power Automate for cross-platform processes, and facilitated service desk support for regional store staff across DFI Retail Group's operations in Asia.
                   </p>
                 </div>
               </div>
@@ -612,7 +612,7 @@ export default function App() {
               
               <div className="relative pl-8 md:pl-12 group">
                 
-                <div className="absolute -left-[11px] top-1 w-5 h-5 bg-pink-400 rounded-full border-4 border-neutral-50 group-hover:bg-pink-500 transition-colors shadow-sm"></div>
+                <div className="absolute -left-[11px] top-1 w-5 h-5 bg-neutral-300 rounded-full border-4 border-neutral-50 group-hover:bg-pink-400 transition-colors shadow-sm"></div>
                 
                 
                 <div className="bg-white p-6 rounded-2xl shadow-sm border border-neutral-100 hover:shadow-md transition-shadow">
@@ -643,12 +643,12 @@ export default function App() {
                       <GraduationCap size={18} className="text-neutral-400 group-hover:text-pink-400 transition-colors" /> IT Student & Developer
                     </h3>
                     <span className="text-xs font-mono text-neutral-500 mt-2 md:mt-0">
-                      2022 - Present
+                      August 2022 - September 2026
                     </span>
                   </div>
                   <h4 className="text-neutral-500 font-medium mb-4 text-sm">FEU Institute of Technology - Manila, PH</h4>
                   <p className="text-neutral-600 text-sm leading-relaxed">
-                    Currently pursuing a BS in Information Technology specializing in Web and Mobile Applications. Experienced in full-stack development, including front-end design, back-end logic, and database integration. Hands-on experience with web hosting, Linux system administration, and Python-based data analysis.
+                    Pursuing a BS in Information Technology specializing in Web and Mobile Applications. Experienced in full-stack development, including front-end design, back-end logic, and database integration. Hands-on experience with web hosting, Linux system administration, and Python-based data analysis.
                   </p>
                 </div>
               </div>
@@ -788,7 +788,7 @@ export default function App() {
             <h2 className="text-4xl font-bold text-pink-400 mb-8">about me</h2>
             <div className="space-y-6 text-gray-300 font-light leading-relaxed">
               <p>
-                I am a 4th year student at FEU Institute of Technology taking BS Information Technology in Web and Mobile Applications. I am always learning to find new ideas to bring accessibility to others. I am currently exploring internship opportunities in Metro Manila to apply academic knowledge to practical development challenges.
+                I am an IT graduate from FEU Institute of Technology specializing in Web and Mobile Applications. I am always learning to find new ideas to bring accessibility to others. Having gained hands-on experience through enterprise internships, I am currently looking for apprenticeships or entry-level development roles to apply my technical background to practical engineering challenges.
               </p>
               <p>
                 Taking my developer hat off, I am happiest when I'm near the ocean. I love travelling and practicing freediving to disconnect from the digital world. When I am back at my setup, I swap the wetsuit for a headset to play Valorant.
@@ -844,7 +844,7 @@ export default function App() {
                   </div>
                   <div className="flex items-center gap-3 text-sm text-gray-600 hover:text-pink-500 transition-colors cursor-pointer group">
                     <MapPin size={18} className="text-pink-400 group-hover:scale-110 transition-transform" />
-                    <span>San Pedro City, Laguna, Philippines</span>
+                    <span>Bacoor City, Cavite, Philippines</span>
                   </div>
                 </div>
               </div>
